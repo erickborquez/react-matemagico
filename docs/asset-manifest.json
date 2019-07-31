@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.76c72923.chunk.css",
-    "main.js": "/static/js/main.f5875627.chunk.js",
-    "main.js.map": "/static/js/main.f5875627.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.71e00c83.chunk.js": "/static/js/2.71e00c83.chunk.js",
-    "static/js/2.71e00c83.chunk.js.map": "/static/js/2.71e00c83.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.77b537fbee79019fa289540bcc9ea79f.js": "/precache-manifest.77b537fbee79019fa289540bcc9ea79f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.76c72923.chunk.css.map": "/static/css/main.76c72923.chunk.css.map"
+    "main.css": "/react-matemagico/static/css/main.76c72923.chunk.css",
+    "main.js": "/react-matemagico/static/js/main.38646e5d.chunk.js",
+    "main.js.map": "/react-matemagico/static/js/main.38646e5d.chunk.js.map",
+    "runtime~main.js": "/react-matemagico/static/js/runtime~main.055bd262.js",
+    "runtime~main.js.map": "/react-matemagico/static/js/runtime~main.055bd262.js.map",
+    "static/js/2.71e00c83.chunk.js": "/react-matemagico/static/js/2.71e00c83.chunk.js",
+    "static/js/2.71e00c83.chunk.js.map": "/react-matemagico/static/js/2.71e00c83.chunk.js.map",
+    "index.html": "/react-matemagico/index.html",
+    "precache-manifest.4aa63874c56fe03d0e2933ab9cda63a8.js": "/react-matemagico/precache-manifest.4aa63874c56fe03d0e2933ab9cda63a8.js",
+    "service-worker.js": "/react-matemagico/service-worker.js",
+    "static/css/main.76c72923.chunk.css.map": "/react-matemagico/static/css/main.76c72923.chunk.css.map"
   }
 }
