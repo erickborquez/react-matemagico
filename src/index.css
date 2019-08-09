@@ -1,61 +1,177 @@
-*,*:after,*:before{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    font-size: 62.5%
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(28, 30, 36);
+    color: rgb(240, 236, 236);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+
+.menu {
+    background-color: transparent;
+    color:transparent;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    transition: color 1s, background-color 1.2s;
+    display: grid;
+    grid-template-rows: 1fr 20rem 20rem 1fr;
+    grid-template-columns: 1fr minmax(70%, 100rem) 1fr;
+    grid-template-areas:
+    ". . ."
+    ". text ." 
+    ". button ."
+    " . . ."
 }
 
-.cardContainer{
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 50px;
-  overflow: hidden;
-}
-.card{
-  text-align: center;
-  position: relative;
-  transform: translateY(-80px);
-  
+.menu__fade{
+    color: rgb(240, 236, 236);
+    background-color: rgb(28, 30, 36);    
 }
 
-.card span{
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.menu__textContainer {
+    text-align: center;
+    grid-area: text;
 }
 
-.inputAnswer{
-  width: 40%;
-  font-size: 60px;
-  text-align: center;
-  background-color: #eee;
-  border: none;
-  height: 80px;
-  display: block;
-  margin: 0 auto;
-}
-.inputAnswer:focus{
-  outline:none;
+.menu__title {
+    font-size: 7rem;
 }
 
-.gameContainer{
-  width:100%;
-  max-width: 1000px;
-  margin: 0 auto;
+.menu__sub {
+    font-size: 3rem;
+}
+
+.menu__buttons {
+    grid-area: button;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.menu__fade .menu__startButton{
+    border-radius: 5px;
+    padding:1.5rem 2.5rem;
+    border:2px solid black;
+    cursor: pointer;
+}
+.menu__fade .menu__startButton:hover{
+    background-color: black;
+}
+
+.menu__startButton{
+    cursor: default;
+    border: none;
+}
+
+.menu__startButton:hover{
+    background-color: transparent;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+}
+
+.cardContainer {
+    font-size: 5em;
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    position: relative;
+}
+
+.card span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.gameContainer {
+    width: 100%;
+    max-width: 1300px;
+    font-size: 1.2rem;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    --inputWidth: 50%;
+
+}
+.game__content{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.inputAnswer {
+    width:  var(--inputWidth);
+    font-size: 60px;
+    text-align: center;
+    background-color: #eee;
+    border: none;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.inputAnswer:focus {
+    outline: none;
+}
+
+
+.time-left {
+    color: #fff;
+    position: absolute;
+    top:20%;
+    left:calc((100% - var(--inputWidth)) / 2);
+    transform: translateX(-50%);
+}
+
+.score{
+    position: absolute;
+    top:20%;
+    left:calc(var(--inputWidth) + ((100% - var(--inputWidth)) / 2));          
+    transform: translateX(-50%);                             
+}
+.stats__container{
+    font-size: 4rem;
+}
+
+.stats__container:not(:first-child){
+    margin-top: 5rem;
+}
+.stats__sub{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+.stats__main{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
 }

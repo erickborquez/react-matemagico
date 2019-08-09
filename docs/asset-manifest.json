@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-matemagico/static/css/main.76c72923.chunk.css",
-    "main.js": "/react-matemagico/static/js/main.38646e5d.chunk.js",
-    "main.js.map": "/react-matemagico/static/js/main.38646e5d.chunk.js.map",
+    "main.css": "/react-matemagico/static/css/main.f497a342.chunk.css",
+    "main.js": "/react-matemagico/static/js/main.a5ed5c0f.chunk.js",
+    "main.js.map": "/react-matemagico/static/js/main.a5ed5c0f.chunk.js.map",
     "runtime~main.js": "/react-matemagico/static/js/runtime~main.055bd262.js",
     "runtime~main.js.map": "/react-matemagico/static/js/runtime~main.055bd262.js.map",
-    "static/js/2.71e00c83.chunk.js": "/react-matemagico/static/js/2.71e00c83.chunk.js",
-    "static/js/2.71e00c83.chunk.js.map": "/react-matemagico/static/js/2.71e00c83.chunk.js.map",
+    "static/js/2.123fe850.chunk.js": "/react-matemagico/static/js/2.123fe850.chunk.js",
+    "static/js/2.123fe850.chunk.js.map": "/react-matemagico/static/js/2.123fe850.chunk.js.map",
     "index.html": "/react-matemagico/index.html",
-    "precache-manifest.4aa63874c56fe03d0e2933ab9cda63a8.js": "/react-matemagico/precache-manifest.4aa63874c56fe03d0e2933ab9cda63a8.js",
+    "precache-manifest.e666f62edd4639b7c5afa8b64fbf851e.js": "/react-matemagico/precache-manifest.e666f62edd4639b7c5afa8b64fbf851e.js",
     "service-worker.js": "/react-matemagico/service-worker.js",
-    "static/css/main.76c72923.chunk.css.map": "/react-matemagico/static/css/main.76c72923.chunk.css.map"
+    "static/css/main.f497a342.chunk.css.map": "/react-matemagico/static/css/main.f497a342.chunk.css.map"
   }
 }

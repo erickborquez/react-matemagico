@@ -3,15 +3,15 @@ function generateNumber(difficulty) {
 }
 
 function createOperation({ symbol, evaluation }) {
-    return (dif, key) => {
+    return (difficulty, key) => {
         let answer, param;
         do {
             param = Array(2)
                 .fill(null)
-                .map(() => generateNumber(dif))
+                .map(() => generateNumber(difficulty))
                 .sort((a, b) => b - a);
             answer = evaluation(...param);
-        } while ((answer % 1) != 0);
+        } while ((answer % 1) !== 0);
         return { symbol: symbol, param: param, answer: answer, key: key }
     }
 }
@@ -41,13 +41,12 @@ class Operation {
             evaluation: (a, b) => a - b
         })
     }
-    static generateOperation({ key, dif }) {
+    static generateOperation({ key, difficulty }) {
         let { multiplication } = this.operations;
         let method = selectRandomMethod(this.operations);
-        if (method == multiplication)
-            dif = dif / 2;
-        let operation = method(dif, key);
-        return operation;
+        if (method === multiplication)
+            difficulty = difficulty / 2;
+        return method(difficulty, key);
     }
 }
 
